@@ -31,6 +31,7 @@ export default function VideoPlayer({ url, title, onEnded }: VideoPlayerProps) {
   return (
     <div className="relative bg-black rounded-xl overflow-hidden aspect-video">
       <ReactPlayer
+        // @ts-expect-error - react-player types issue
         url={url}
         width="100%"
         height="100%"
